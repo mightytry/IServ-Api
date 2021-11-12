@@ -16,4 +16,5 @@ To run this project, install it locally using npm:
 
 ```
 $ npm install
+$ node ./examples/ex1.js
 ```
