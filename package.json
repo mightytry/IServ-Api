@@ -1,0 +1,24 @@
+{
+  "name": "iserv-api",
+  "version": "0.0.1",
+  "description": "Api created for Iserv!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mightytry/Iserv-Api.git"
+  },
+  "author": "mightytry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mightytry/Iserv-Api/issues"
+  },
+  "homepage": "https://github.com/mightytry/Iserv-Api#readme",
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "fs": "0.0.1-security",
+    "moment-timezone": "^0.5.34"
+  }
+}
