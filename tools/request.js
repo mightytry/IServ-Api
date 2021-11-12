@@ -24,7 +24,7 @@ class Request {
         {
             this._cookies = JSON.parse(readFileSync(this._client._cookieFile));
             this._fcookies = ForamtCookies(this._cookies);
-            await this.Send("login_check")
+            await this.Send("login_check");
             this._client.Log(this._data, this._cookies);
             if (this._data.status == 200) return;
         }
@@ -38,8 +38,11 @@ class Request {
 		});
         this._cookies = this._data.cookieJar.cookies;
         this._fcookies = ForamtCookies(this._cookies);
+        if (this._fcookies.toString() === ""){
+            throw new Error("\n\nWrong login information provided!\n");
+        }
         this._client.Log(this._data, this._cookies);
-
+        
         // for setting reuseCookies
         if (this._client._reuseCookies){
             writeFileSync( this._client._cookieFile, JSON.stringify(this._cookies));
