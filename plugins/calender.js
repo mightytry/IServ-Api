@@ -46,16 +46,16 @@ class Calender{
         else{
             const out = [];
             this._data.forEach(element => {
-                out.push(format.replace(RegExp("<id>", 'g'), element.id)
-                .replace(RegExp("<id>", 'g'), element.id)
+                out.push(format.replace(new RegExp("<id>", 'g'), element.id)
+                .replace(new RegExp("<id>", 'g'), element.id)
                 .replace(new RegExp("<title>", 'g'), element.title)
-                .replace(RegExp("<start>", 'g'), element.start)
-                .replace(RegExp("end", 'g'), element.end)
-                .replace(RegExp("<allDay>", 'g'), element.allDay)
-                .replace(RegExp("<editable>", 'g'), element.editable)
-                .replace(RegExp("<when>", 'g'), element.when)
-                .replace(RegExp("<plugin>", 'g'), element.plugin)
-                .replace(RegExp("<details>", 'g'), element.details));
+                .replace(new RegExp("<start>", 'g'), element.start)
+                .replace(new RegExp("end", 'g'), element.end)
+                .replace(new RegExp("<allDay>", 'g'), element.allDay)
+                .replace(new RegExp("<editable>", 'g'), element.editable)
+                .replace(new RegExp("<when>", 'g'), element.when)
+                .replace(new RegExp("<plugin>", 'g'), element.plugin)
+                .replace(new RegExp("<details>", 'g'), element.details));
             });
             return out;
         }
