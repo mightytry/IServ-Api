@@ -2,7 +2,7 @@
 Api created for Iserv!
 
 ## Currently Supports
-* All requests to iserv with cookie and rememberme!
+* All requests to iserv with cookies and rememberme!
 * Callender plugin
   * Json data
   * Formated to string like: "Exam: <title> starts on <start>"

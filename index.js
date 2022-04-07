@@ -68,7 +68,9 @@ class IServClient {
     **/
     Log(...text)
     {
-        if (this._log) for (var i=0; i < text.length; i++) console.log(text[i]);
+        if (this._log) text.forEach(t => {
+            console.log(t)
+        });
     }
 
 }

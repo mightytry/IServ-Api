@@ -56,3 +56,4 @@ test.js
 test
 node_modules
 cookies.json
+.gitignore
